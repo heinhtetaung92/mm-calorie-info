@@ -19,7 +19,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('nutirition_facts', 'NutiritionFactAPIController');
-
-Route::resource('nutirition_facts', 'NutiritionFactAPIController');
-
-Route::resource('nutirition_facts', 'NutiritionFactAPIController');

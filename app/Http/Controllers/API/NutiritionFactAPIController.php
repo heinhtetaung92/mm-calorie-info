@@ -126,4 +126,9 @@ class NutiritionFactAPIController extends Controller
 
         return $this->sendResponse($id, 'Nutirition Fact deleted successfully');
     }
+
+    public function sendResponse($response) {
+        return $response;
+    }
+
 }

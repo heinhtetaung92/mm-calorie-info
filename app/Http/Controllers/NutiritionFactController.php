@@ -18,6 +18,7 @@ class NutiritionFactController extends Controller
 
     public function __construct(NutiritionFactRepository $nutiritionFactRepo)
     {
+        $this->middleware('auth');
         $this->nutiritionFactRepository = $nutiritionFactRepo;
     }
 

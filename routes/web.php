@@ -19,9 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::resource('nutiritionFacts', 'NutiritionFactController');
-
-Route::resource('nutiritionFacts', 'NutiritionFactController');
-
 Route::resource('nutiritionFacts', 'NutiritionFactController');
