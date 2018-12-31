@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
+use Illuminate\Support\Facades\Auth;
 use Response;
 
 class NutiritionFactController extends Controller
@@ -34,6 +35,7 @@ class NutiritionFactController extends Controller
         $nutiritionFacts = $this->nutiritionFactRepository->all();
 
         return view('nutirition_facts.index')
+            ->with('role', Auth::user()->role)
             ->with('nutiritionFacts', $nutiritionFacts);
     }
 
